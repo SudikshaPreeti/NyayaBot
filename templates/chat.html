@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Ask NyayaBot{% endblock %}
+{% block content %}
+<section class="chat-page">
+    <div class="chat-header">
+        <h1>💬 Ask NyayaBot</h1>
+        <p>Describe your problem in plain language — Hindi, English or Hinglish.</p>
+    </div>
+    <div class="chat-container">
+        <div id="chatBox" class="chat-box">
+            <div class="message bot-message">
+                <div class="avatar">⚖️</div>
+                <div class="bubble">Namaste! 🙏 I'm NyayaBot. Describe your legal problem. For example:<br><br>• "My landlord won't return my ₹50,000 security deposit"<br>• "My employer hasn't paid salary for 3 months"<br>• "I got cheated on an online shopping site"<br><br><strong>Emergency?</strong> Call <strong>112</strong> or Women Helpline <strong>181</strong>.</div>
+            </div>
+        </div>
+        <div class="chat-input-area">
+            <textarea id="userInput" placeholder="Type your problem here..." rows="2"></textarea>
+            <button id="sendBtn" class="btn btn-primary">Send ➤</button>
+        </div>
+        <div class="quick-prompts">
+            <span>Try:</span>
+            <button class="quick-btn" data-prompt="My landlord won't return my security deposit">Landlord deposit</button>
+            <button class="quick-btn" data-prompt="My employer has not paid my salary for 2 months">Unpaid salary</button>
+            <button class="quick-btn" data-prompt="I received a defective product online and seller won't refund">Consumer issue</button>
+        </div>
+    </div>
+</section>
+{% endblock %}

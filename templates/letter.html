@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Generate Legal Notice{% endblock %}
+{% block content %}
+<section class="letter-page">
+    <h1>📝 Generate a Legal Notice</h1>
+    <p class="subtitle">Fill the details below. NyayaBot will draft a formal legal notice you can send.</p>
+    <div class="letter-form">
+        <div class="form-row">
+            <input type="text" id="name" placeholder="Your Full Name" required>
+            <input type="text" id="phone" placeholder="Your Phone Number" required>
+        </div>
+        <input type="text" id="address" placeholder="Your Full Address" required>
+        <input type="text" id="recipient" placeholder="Recipient Name & Address" required>
+        <textarea id="problem" placeholder="Describe your problem in detail..." rows="5" required></textarea>
+        <button id="generateBtn" class="btn btn-primary">✨ Generate Legal Notice</button>
+    </div>
+    <div id="letterOutput" class="letter-output hidden">
+        <div class="letter-header">
+            <h2>Your Legal Notice</h2>
+            <a href="/download_letter" class="btn btn-secondary">⬇ Download PDF</a>
+        </div>
+        <pre id="letterContent"></pre>
+    </div>
+</section>
+{% endblock %}

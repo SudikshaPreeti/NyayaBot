@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Find Free Legal Aid{% endblock %}
+{% block content %}
+<section class="clinics-page">
+    <h1>🏛️ Free Legal Aid Near You</h1>
+    <p class="subtitle">Under the Legal Services Authorities Act, 1987, free legal aid is your right.</p>
+    <h2>📞 National Helplines</h2>
+    <div class="helpline-grid">
+        {% for h in helplines %}
+        <div class="helpline-card">
+            <div class="helpline-name">{{ h.name }}</div>
+            <div class="helpline-number">{{ h.number }}</div>
+        </div>
+        {% endfor %}
+    </div>
+    <h2>🏢 State Legal Services Authorities</h2>
+    <div class="clinic-grid">
+        {% for c in clinics %}
+        <div class="clinic-card">
+            <h3>{{ c.name }}</h3>
+            <p>📍 {{ c.address }}</p>
+            <p>📞 <a href="tel:{{ c.phone }}">{{ c.phone }}</a></p>
+            <p class="state-tag">{{ c.state }}</p>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="info-box">
+        <h3>💡 How to Get a Free Lawyer</h3>
+        <ol>
+            <li>Visit your nearest <strong>District Legal Services Authority (DLSA)</strong> at the district court.</li>
+            <li>Carry ID proof, address proof, and income certificate.</li>
+            <li>Fill the free legal aid application form.</li>
+            <li>If eligible, a lawyer is assigned to you at zero cost.</li>
+            <li>Also apply online at <a href="https://nalsa.gov.in" target="_blank">nalsa.gov.in</a>.</li>
+        </ol>
+    </div>
+</section>
+{% endblock %}
