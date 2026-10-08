@@ -1,16 +1,9 @@
-<img width="319" height="495" alt="Screenshot 2026-10-08 at 7 12 46 PM" src="https://github.com/user-attachments/assets/c5a0611e-0a07-4d5d-a8fc-f979c296f055" /># ⚖️ NyayaBot — Free Legal Aid for Underserved Indians
+ NyayaBot — Free Legal Aid for Underserved Indians
 
 > **"Justice shouldn't cost a fortune."**
 >
 > An AI-powered legal aid agent that helps Indian citizens understand their rights, draft legal notices, and find free legal aid — in plain language, in minutes, for free.
 
-[![SDG 16](https://img.shields.io/badge/SDG-16%20Peace%2C%20Justice%20%26%20Strong%20Institutions-1a4d8f)](https://sdgs.un.org/goals/goal16)
-[![SDG 10](https://img.shields.io/badge/SDG-10%20Reduced%20Inequalities-ff9933)](https://sdgs.un.org/goals/goal10)
-[![Python](https://img.shields.io/badge/Python-3.11%2B-blue)](https://www.python.org/)
-[![Flask](https://img.shields.io/badge/Flask-3.x-000000)](https://flask.palletsprojects.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-
----
 
 ## 📌 The Problem
 
