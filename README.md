@@ -1,5 +1,5 @@
  NyayaBot — Free Legal Aid for Underserved Indians
-
+ 
 > **"Justice shouldn't cost a fortune."**
 >
 > An AI-powered legal aid agent that helps Indian citizens understand their rights, draft legal notices, and find free legal aid — in plain language, in minutes, for free.
@@ -56,6 +56,11 @@ The result: **rights exist on paper, but not in practice** for the majority of I
 
 ## 🚀 Quick Start
 
+### Deployed link (Render) -
+https://nyayabot-73qq.onrender.com/chat
+
+
+
 ### Prerequisites
 
 - Python 3.11 or higher
@@ -88,6 +93,8 @@ OPENAI_API_KEY=sk-your_openai_key_here_optional
 python app.py
 
 Open http://127.0.0.1:5000 in your browser.
+
+
 
 
 
