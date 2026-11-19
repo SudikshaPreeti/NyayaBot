@@ -95,6 +95,20 @@ python app.py
 Open http://127.0.0.1:5000 in your browser.
 
 
+### terminal steps:
+
+# 1. Create the virtual environment
+python3 -m venv venv
+
+# 2. Activate it
+source venv/bin/activate
+
+# 3. Install dependencies
+pip3 install -r requirements.txt
+
+# 4. Run the app
+python3 app.py
+
 
 
 
